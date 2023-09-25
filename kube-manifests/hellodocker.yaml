@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: hello-docker
+  name: hello-docker
+  namespace: foo
+spec:
+  containers:
+  - image: harik8/hello-docker
+    name: hello-docker
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
